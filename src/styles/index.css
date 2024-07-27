@@ -1,12 +1,82 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Dosis", sans-serif;
+    color: lightslategray;
+}
 
-/* 
+.list {
+    width: 500px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.title{
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(207, 202, 195);
+}
 
-*/
+.card{
+    background: white;
+    box-shadow: 0 2px 4px 0 lightgrey, 0 25px 50px 0 rgb(206, 212, 212); 
+    margin: 20px 0;
+
+}
+.input{
+    padding: 16px;
+    width: 100%;
+    border: none;
+    box-shadow: inset 0 -2px 1px lightgray;
+    font-size: 24px;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.task-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.task-item{
+    padding: 16px;
+    border-bottom: 1 solid lightgrey ;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.delete{
+    border: none;
+    background: none;
+    color: rgba(212, 59, 59, 0.719);
+    font-size: 24px;
+    cursor: pointer;
+}
+.delete-button {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.task-item:hover .delete-button{
+    display: inline-block;
+}
+
+.footer {
+    padding: 16px;
+    text-align: left;
+    color: lightgray;
+    font-size: 14px;
+    border-top: 1px solid rgb(235, 232, 232);
+}
